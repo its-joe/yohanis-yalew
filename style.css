@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,400&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    outline: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+nav{
+   background:linear-gradient(to right , rgba(0, 42, 180, 0.795),rgba(104, 217, 252, 0.795));
+   display:flex;
+   justify-content: space-between;
+   height: 50px;
+   position: sticky;
+   top:0px;
+   z-index: 2;
+   align-items: center;
+}   
+nav .toggle{
+    display: none;
+}
+nav h3{
+   color: rgb(247, 247, 247);
+   font-size: 40px;
+   display: inline; 
+   padding-left: 5px;
+}
+nav ul li a:hover{ 
+      color: rgb(255, 255, 255);
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 5px;
+      border-color: rgba(0, 0, 0, 0.062) ;
+      background-color: rgba(0, 0, 0, 0.582);
+}
+nav h3:hover{ 
+    text-shadow: 0px 0px 5px black;
+    color: rgb(11, 146, 236);
+}
+h3 span{
+    color: rgb(255, 209, 6);
+}
+nav ul li{
+   display: inline-block;
+   list-style: none;
+   padding: 10px;
+   font-weight: bold;
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgb(0, 0, 0)
+}
+#home{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-image: url("pexels-roberto-nickson-7238759.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#hi{
+    color:rgb(0, 0, 0);
+    font-size:200px;
+    padding: 4%;
+    padding-left: 20%;
+    animation: mycolor;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    animation-delay: 0s;
+    animation-timing-function:ease;
+    font-family: 'Beau Rivage', cursive;
+}
+@keyframes mycolor{
+    0%{text-shadow:0px 0px 10px rgb(0, 255, 255);}
+    50%{text-shadow:0px 0px 10px rgb(229, 255, 0);}
+    25%{text-shadow:0px 0px 10px rgb(238, 204, 13);}
+    45%{text-shadow:0px 0px 10px rgb(45, 247, 18);}
+    60%{text-shadow:0px 0px 10px rgb(0, 226, 215);}
+    75%{text-shadow:0px 0px 10px rgb(52, 108, 230);}
+    90%{text-shadow:0px 0px 10px rgb(23, 105, 199);}
+    100%{text-shadow:0px 0px 10px rgb(253, 17, 88);}
+}
+ #name{
+    color: aliceblue;
+    padding-left: 18%;
+    text-shadow: 0px 0px 5px black;
+
+}
+#home img{
+    position: absolute;
+    top: 13%;
+    left:50%;
+    block-size: 700px;
+}
+#name span{
+    color: rgb(11, 146, 236);
+    /* width: 30px; */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.726);
+    background-color: rgba(0, 0, 0, 0.897);
+    border-radius: 5px;
+    font-size: 30px;
+    text-shadow: 0px 0px 5px black;
+}
+#name span:hover{
+    text-shadow: 0px 0px 5px rgb(11, 146, 236);
+    color: white;
+}
+#home h4{
+    color: rgb(252, 249, 249);
+    padding-left: 13%;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+#about{
+    position: relative;
+    width: 100%;
+    height:700px;
+    background:linear-gradient(to left , rgb(62, 107, 255),rgb(140, 220, 245));
+} 
+#about h1{
+    position: absolute;
+    left: 40%;
+    top: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+#about img{
+    position: absolute;
+    display: inline-block;
+    height: 40%;
+    left: 5%;
+    top: 30%;
+}
+#about p{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    color: rgb(255, 255, 255);
+    width: 35%;
+    background-color:rgba(71, 71, 71, 0.466);
+    border-radius: 10px;
+    font-size: 20px;
+    /* padding: 5px; */
+}
+
+#about p span{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+#service{
+    position: relative;
+    height: 700px;
+    text-align: center;
+    background-color: rgb(255, 220, 220);
+    background:linear-gradient(to right, rgb(255, 185, 237), black);
+    margin-top: -50px;
+
+}
+#service h1{
+    position: absolute;
+    top:10%;
+    left: 45%;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+   
+} 
+#service #card{
+    position: absolute;
+    width: 70%;
+    height: 65%;
+    top: 25%;
+    left: 15%;
+    border-radius: 15px;
+    background-color: rgba(32, 31, 31, 0.596);
+}
+#service .contain{
+    position: absolute;
+    left: 15%;
+    width: 75%;
+   display: grid;
+   grid-template-rows:repeat(3 , 1fr);
+   gap: 3%;
+   margin-top: 5%;
+}
+#service .contain .services{
+    background-color: rgb(29, 29, 29);
+    color: rgb(255, 245, 230);
+    padding: 3% 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px;
+}
+#service .contain .services:hover{
+    box-shadow: 0px 2px 20px rgb(11, 146, 236);
+    
+}
+#service .contain .services:nth-child(n)
+h3{
+    color: rgb(241, 223, 223);
+}
+#lab{
+    position: relative;
+    height: 650px;
+    text-align: center;
+    background:linear-gradient(to left , rgb(62, 107, 255),rgb(255, 169, 234));
+    margin-top: -50px;
+}
+#lab h1{
+    position: absolute;
+    top:10%;
+    left: 45%;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    /* text-shadow: 0px 0px 8px black; */
+   
+}
+#lab .contain{
+    position: absolute;
+    left:12%;
+    top: 30%;
+    width: 75%;
+   display: grid;
+   grid-template-columns:repeat(2 , 1fr);
+   gap: 10%;
+   margin-top: 3%;
+}
+#lab .contain .activitys{
+    background-color: rgba(0, 0, 0, 0.795);
+    color: rgb(255, 255, 255);
+    padding: 2% 2%;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    border-radius: 15px;
+}
+#lab .contain .activitys:hover{
+    box-shadow: 0px 2px 20px rgb(11, 146, 236);
+    
+}
+#lab .contain .activitys:nth-child(n)
+h3{
+    color: rgb(81, 140, 250);
+}
+#contact{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height:600px;
+    background-image: url("pexels-andrew-neel-2312369.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+#contact h1{
+        position: absolute;
+        top:10%;
+        left: 45%;
+        color: rgb(11, 146, 236);
+        font-size: 40px;
+}
+#contact form{
+    position: absolute;
+    top:-5%;
+    left: 5%;
+    color: rgb(11, 146, 236);
+    font-size: 20px;
+    display:grid;
+    padding: 5%;
+
+}
+#contact form input{
+    padding: 3%;
+    margin: 2%;
+}
+#contact #footer ul{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    bottom:0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.801);
+    display:flex;
+    align-items: center;
+}
+#contact #footer ul li{
+    list-style:none;
+    flex-direction: row;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#contact li a img{
+    block-size: 35px;
+    border-radius: 40px;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgb(35, 93, 252);
+}
+#contact #back{
+    position: absolute;
+    background:linear-gradient(to right , rgba(0, 42, 180, 0.795),rgba(104, 217, 252, 0.795));
+    width: 400px;
+    height: 50%;
+    top: 25%;
+    left: 37%;
+    border-radius: 10px;
+}
+#contact button{
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    color: white;
+    border-style: solid;
+    background-color: rgba(1, 39, 167, 0.795);
+    border-color: rgba(27, 72, 219, 0.726);
+    border-width: 5px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1125px){
+    #home img{
+        position: absolute;
+        top: 22%;
+        left:50%;
+        block-size: 600px;
+    }
+}
+@media screen and (max-width:1045px){
+    #home img{
+        position: absolute;
+        top: 35%;
+        left:50%;
+        block-size: 500px;
+    }
+}
+@media screen and (max-width:865px){
+    #home img{
+        position: absolute;
+        top: 39%;
+        left:45%;
+        block-size: 500px;
+    }
+}
+@media screen and (max-width:785px){
+    #name{
+        padding-left: 18%;
+    }
+    #hi{
+        color:rgb(0, 0, 0);
+        font-size:150px;
+        padding: 3%;
+        padding-left: 20%;
+    }
+    #home img{
+        position: absolute;
+        top: 42%;
+        left:35%;
+        block-size: 450px;
+    }
+    #about p{
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        color: rgb(255, 255, 255);
+        width: 40%;
+        font-size: 20px;
+        padding: 1%;
+    }
+    #about img{
+        position: absolute;
+        top: 39%;
+        left:10%;
+        block-size: 200px;
+    }
+}
+
+@media screen and (max-width:697px){
+    #service .contain{
+        left: 7%;
+        width: 88%;
+       grid-template-rows:repeat(3 , 1fr);
+       gap: 2rem;
+       margin-top: 5%;
+    }
+
+}
+@media screen and (max-width:620px){
+    #home img{
+        position: absolute;
+        top: 42%;
+        left:20%;
+        block-size: 500px;
+    }
+    #service .contain{
+        position: absolute;
+        top: 23%;
+        left: 10%;
+        width: 85%;
+       display: grid;
+       gap: 3%;
+       margin-top: 5%;
+    }
+    #about p{
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        color: rgb(255, 255, 255);
+        width: 50%;
+        font-size: 15px;
+        padding: 1%;
+    }
+    #contact #back{
+        height: 50%;
+        top: 25%;
+        left: 27%;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width:540px){
+    #home img{
+        position: absolute;
+        top: 42%;
+        left:5%;
+        block-size: 500px;
+    }
+    #about img{
+      display: none;
+    }
+    #about p{
+        width: 0%;
+        left: 20%;
+    }
+}
+@media screen and (max-width:503px){
+    nav ul li{
+        display: flex;
+        padding: 10px;
+        font-weight: bold;
+    }
+    ul{
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: 3rem 1rem;
+        background:hsl(0,0%, 100%, 0.1rem);
+        backdrop-filter:blur(1rem) ;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+    ul[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    nav .toggle{
+        position: absolute;
+        display: block;
+        background-color: transparent;
+        background-image:url(iconmonstr-menu-1-240.png);
+        background-size:cover;
+        border-style: none;
+        aspect-ratio: 1;
+        width: 2rem;
+        right: 10%;
+        top: 30%;
+        z-index: 4;
+    }
+    nav .toggle[aria-expanded="true"]{
+
+        background-image:url(iconmonstr-x-mark-1-240.png);
+    }
+}
